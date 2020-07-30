@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<div class="col-md-8 col-md-offset-2 col-xs-12">
   <h1>New comment</h1>
   <form method="POST" class="post-form">
   {% csrf_token %}
@@ -10,5 +11,5 @@
   </form>
 
   <script>var editor = new MediumEditor('.editable');</script>
-
+</div>
 {% endblock %}
